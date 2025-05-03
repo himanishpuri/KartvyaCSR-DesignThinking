@@ -1,0 +1,97 @@
+/* about-me.css */
+:root {
+    --primary-color: #2b6cb0;
+    --success-color: #38a169;
+    --border-color: #e2e8f0;
+    --light-bg: #f7fafc;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-bg);
+    margin: 0;
+    padding-top: 70px;
+  }
+  
+  /* About Hero Section */
+  .about-hero {
+    background: url('../images/ref\ \(5\).jpg') center/cover no-repeat;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  .about-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+  }
+  
+  /* About Content */
+  .about-content {
+    padding: 4rem 0;
+  }
+  .about-content h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  .about-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+  }
+  
+  /* Our Family Section */
+  .team-section {
+    background: var(--light-bg);
+    padding: 4rem 0;
+  }
+  .team-section h2 {
+    color: var(--primary-color);
+  }
+  .team-member {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  .team-member h6 {
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+  .team-member span {
+    color: #718096;
+    font-size: 0.9rem;
+  }
+  
+  /* Footer overrides (if any) */
+  footer a {
+    text-decoration: none;
+  }
+  
+  /* Adjusting the co-founders images */
+  .co-founders {
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    gap: 20px; /* Space between the images */
+  }
+  
+  .co-founders img {
+    width: 200px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Keep circular shape */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow for better visibility */
+  }
+  

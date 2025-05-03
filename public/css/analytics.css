@@ -1,0 +1,199 @@
+/* Metric Cards */
+.metric-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.metric-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.metric-info {
+    flex: 1;
+}
+
+.metric-info h3 {
+    margin: 0;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.metric-info p {
+    margin: 0.25rem 0 0.5rem;
+    color: #718096;
+}
+
+.metric-trend {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+}
+
+.metric-trend.positive {
+    background: #f0fff4;
+    color: #38a169;
+}
+
+.metric-trend.negative {
+    background: #fff5f5;
+    color: #e53e3e;
+}
+
+.metric-trend.neutral {
+    background: #f7fafc;
+    color: #718096;
+}
+
+/* Charts */
+.card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin-bottom: 1.5rem;
+}
+
+.card-header {
+    background: white;
+    border-bottom: 1px solid var(--border-color);
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-title {
+    margin: 0;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.card-actions .btn-icon {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    color: #718096;
+    background: transparent;
+    border: none;
+}
+
+.card-actions .btn-icon:hover {
+    background: #f8fafc;
+    color: var(--primary-color);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Impact Metrics */
+.impact-metrics {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.metric-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.metric-label {
+    min-width: 140px;
+    color: #4a5568;
+}
+
+.metric-progress {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.progress {
+    flex: 1;
+    height: 8px;
+    border-radius: 1rem;
+    background: #edf2f7;
+}
+
+.metric-progress span {
+    min-width: 45px;
+    font-weight: 500;
+    color: var(--dark-color);
+}
+
+/* Date Range Picker */
+.date-range-picker {
+    position: relative;
+}
+
+.date-range-picker .btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Export Modal */
+#exportDateRange {
+    background: #f8fafc;
+    cursor: pointer;
+}
+
+/* Map Chart */
+#mapChart {
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .metric-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .metric-row {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .metric-label {
+        min-width: 0;
+    }
+
+    .header-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .date-range-picker {
+        width: 100%;
+    }
+
+    .date-range-picker .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}

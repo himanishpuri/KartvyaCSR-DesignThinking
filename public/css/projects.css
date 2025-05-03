@@ -1,0 +1,178 @@
+:root {
+    --border-color: #e2e8f0; /* Define border color */
+    --dark-color: #2d3748; /* Define dark color */
+}
+
+/* Project Card Styles */
+
+.project-card {
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.project-header {
+    background-color: #f8fafc; /* Add background color for better visibility */
+
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.project-body {
+    padding: 1rem;
+}
+
+.project-body h5 {
+    margin-bottom: 0.5rem;
+    color: var(--dark-color);
+}
+
+.project-body p {
+    line-height: 1.5; /* Improve line height for better readability */
+
+    color: #718096;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.project-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: #718096;
+}
+
+.project-progress {
+    margin-bottom: 1rem;
+}
+
+.project-progress .progress {
+    margin-bottom: 0.5rem;
+}
+
+.project-progress span {
+    font-size: 0.875rem;
+    color: #718096;
+}
+
+.project-footer {
+    background-color: #f8fafc; /* Add background color for consistency */
+
+    padding: 1rem;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.corporate-partner {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.corporate-partner img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.corporate-partner span {
+    font-size: 0.875rem;
+    color: #718096;
+}
+
+/* Filter Styles */
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.header-title h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.header-title p {
+    margin: 0;
+    color: #718096;
+}
+
+/* Modal Styles */
+.modal-header {
+    background: #f8fafc;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.modal-footer {
+    background: #f8fafc;
+    border-top: 1px solid var(--border-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .content-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .project-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/* Add margin to the dashboard content */
+.dashboard-content {
+    margin-left: 260px; /* Keep the sidebar width with a slight gap */
+    padding: 1rem; /* Maintain padding for better spacing */
+}
+
+/* Adjust card margins */
+.card {
+    margin: 0.5rem; /* Decrease margin around cards */
+}
+
+/* Adjust the header actions */
+.header-actions {
+    margin-bottom: 0.5rem; /* Decrease space below header actions */
+}
+
+/* Adjust the quick stats row */
+.row.g-4 {
+    margin: 0; /* Remove negative margin for better alignment */
+}
+
+/* Adjust modal padding */
+.modal-content {
+    padding: 1rem; /* Maintain padding for better spacing */
+}
+
+/* Adjust sidebar styles */
+.dashboard-sidebar {
+    margin-right: 0; /* Remove any right margin */
+}
+
+/* Remove any padding from body */
+body.dashboard-body {
+    padding: 0; /* Remove padding to eliminate gaps */
+}

@@ -1,0 +1,241 @@
+/* Document Layout */
+.document-navigation {
+    background: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.breadcrumb {
+    margin: 0;
+}
+
+.section-title {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+/* Folder Styles */
+.folder-card {
+    background: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.folder-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.folder-icon {
+    font-size: 2rem;
+    color: #f6ad55;
+}
+
+.folder-info {
+    flex: 1;
+}
+
+.folder-info h6 {
+    margin: 0;
+    color: var(--dark-color);
+}
+
+.folder-info small {
+    color: #718096;
+}
+
+/* File Table Styles */
+.document-table {
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.file-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.file-info i {
+    font-size: 1.25rem;
+}
+
+.shared-users {
+    display: flex;
+    align-items: center;
+}
+
+.avatar-group {
+    display: flex;
+    align-items: center;
+}
+
+.avatar-group img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: -10px;
+}
+
+.avatar-group img:first-child {
+    margin-left: 0;
+}
+
+.avatar-more {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #edf2f7;
+    color: #718096;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    margin-left: -10px;
+}
+
+/* Upload Area Styles */
+.upload-area {
+    border: 2px dashed #e2e8f0;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    text-align: center;
+    transition: border-color 0.3s ease;
+}
+
+.upload-area.dragover {
+    border-color: var(--primary-color);
+    background: #ebf8ff;
+}
+
+.upload-area i {
+    font-size: 3rem;
+    color: #718096;
+    margin-bottom: 1rem;
+}
+
+.upload-area h5 {
+    margin-bottom: 0.5rem;
+    color: var(--dark-color);
+}
+
+.upload-list {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.upload-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    background: #f7fafc;
+    border-radius: 0.375rem;
+    margin-bottom: 0.5rem;
+}
+
+.upload-item-info {
+    flex: 1;
+}
+
+.upload-item-progress {
+    width: 100px;
+}
+
+/* File Type Icons */
+.file-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.375rem;
+}
+
+.file-pdf {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.file-doc {
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+.file-image {
+    background: #d1fae5;
+    color: #059669;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .header-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .folder-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .document-table {
+        font-size: 0.875rem;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+}
+
+/* Add margin to the dashboard content */
+.dashboard-content {
+    margin-left: 250px; /* Keep the sidebar width */
+    padding: 1rem; /* Maintain padding for better spacing */
+}
+
+/* Add a small gap between sidebar and content */
+.dashboard-content {
+    margin-left: 260px; /* Add a slight gap */
+}
+
+/* Adjust card margins */
+.card {
+    margin: 0.5rem; /* Decrease margin around cards */
+}
+
+/* Adjust the header actions */
+.header-actions {
+    margin-bottom: 0.5rem; /* Decrease space below header actions */
+}
+
+/* Adjust the quick stats row */
+.row.g-4 {
+    margin: 0; /* Remove negative margin for better alignment */
+}
+
+/* Adjust modal padding */
+.modal-content {
+    padding: 1rem; /* Maintain padding for better spacing */
+}
+
+/* Adjust sidebar styles */
+.dashboard-sidebar {
+    margin-right: 0; /* Remove any right margin */
+}
+
+/* Remove any padding from body */
+body.dashboard-body {
+    padding: 0; /* Remove padding to eliminate gaps */
+}

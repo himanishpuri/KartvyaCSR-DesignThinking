@@ -1,0 +1,275 @@
+/* Quick Help Section */
+.help-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.help-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.help-icon {
+    width: 64px;
+    height: 64px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 0 auto 1.5rem;
+}
+
+.help-card h5 {
+    margin-bottom: 0.75rem;
+    color: var(--dark-color);
+}
+
+.help-card p {
+    color: #718096;
+    margin-bottom: 0;
+}
+
+/* Knowledge Base */
+.kb-search {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.kb-search .input-group {
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.kb-search .input-group-text,
+.kb-search .form-control {
+    border-color: transparent;
+    background: transparent;
+}
+
+.kb-search .form-control:focus {
+    box-shadow: none;
+}
+
+.kb-category {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    height: 100%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.kb-category h5 {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--dark-color);
+    margin-bottom: 1.25rem;
+}
+
+.kb-category h5 i {
+    color: var(--primary-color);
+}
+
+.kb-article-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.kb-article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem;
+    color: #4a5568;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.kb-article:hover {
+    background: #f8fafc;
+    color: var(--primary-color);
+}
+
+.kb-article i {
+    font-size: 0.875rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.kb-article:hover i {
+    opacity: 1;
+}
+
+/* Support Tickets */
+.ticket-item {
+    display: flex;
+    align-items: start;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.ticket-status {
+    min-width: 100px;
+    text-align: center;
+}
+
+.ticket-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.ticket-title {
+    margin: 0 0 0.5rem;
+    color: var(--dark-color);
+}
+
+.ticket-desc {
+    margin: 0 0 1rem;
+    color: #718096;
+}
+
+.ticket-meta {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.875rem;
+    color: #718096;
+}
+
+.ticket-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Live Chat Widget */
+.chat-widget {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 350px;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    transform: translateY(120%);
+    transition: transform 0.3s ease;
+}
+
+.chat-widget.show {
+    transform: translateY(0);
+}
+
+.chat-header {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chat-header h6 {
+    margin: 0;
+}
+
+.chat-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.chat-body {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+.chat-message {
+    margin-bottom: 1rem;
+    max-width: 80%;
+}
+
+.chat-message.received {
+    margin-right: auto;
+}
+
+.chat-message.sent {
+    margin-left: auto;
+}
+
+.message-bubble {
+    padding: 0.75rem 1rem;
+    border-radius: 1rem;
+    background: #f8fafc;
+}
+
+.chat-message.sent .message-bubble {
+    background: var(--primary-color);
+    color: white;
+}
+
+.chat-input {
+    padding: 1rem;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    gap: 0.5rem;
+}
+
+.chat-input .form-control {
+    border-radius: 2rem;
+}
+
+.chat-input .btn {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .ticket-item {
+        flex-direction: column;
+    }
+
+    .ticket-status {
+        min-width: 0;
+        margin-bottom: 1rem;
+    }
+
+    .ticket-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .chat-widget {
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        border-radius: 1rem 1rem 0 0;
+    }
+}

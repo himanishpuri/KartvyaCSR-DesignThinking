@@ -1,0 +1,201 @@
+:root {
+    --primary-color: #2b6cb0;
+    --secondary-color: #38a169;
+    --dark-color: #000000;
+    --light-color: #f7fafc;
+    --success-color: #38a169;
+    --warning-color: #f6e05e;
+}
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-color);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 120px 0;
+    margin-top: -76px; /* Adjust for fixed navbar */
+}
+/* Slideshow */
+.hero-slideshow {
+    position: relative;
+    overflow: hidden;
+    height: 400px; /* Adjust height as needed */
+}
+
+.hero-slideshow .slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-slideshow .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Faster transition */
+}
+
+.hero-slideshow .slide.active {
+    opacity: 1;
+}
+
+.hero-slideshow .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+}
+
+/* Additional styles for text visibility */
+.text-white {
+    color: white !important;
+}
+
+/* Testimonials */
+.card {
+    border: none;
+    border-radius: 12px;
+    background-color: #f8f9fa; /* Light background for contrast */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card h6 {
+    font-weight: bold;
+}
+
+.card p {
+    font-style: italic;
+}
+/* Stats Cards */
+.stat-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Slideshow */
+.why-csr-slideshow {
+    position: relative;
+    overflow: hidden;
+    height: 400px; /* Adjust height as needed */
+}
+
+.why-csr-slideshow .slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.why-csr-slideshow .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Faster transition */
+}
+
+.why-csr-slideshow .slide.active {
+    opacity: 1;
+}
+
+.why-csr-slideshow .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+}
+
+/* Trusted Partners Section */
+.partner-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.partners {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+}
+
+.partner-item {
+    min-width: 150px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.partner-item img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.partner-item img:hover {
+    transform: scale(1.1);
+}
+
+#prevPartner, #nextPartner {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+#prevPartner {
+    left: 0;
+}
+
+#nextPartner {
+    right: 0;
+}
+
+/* Animations */
+[data-aos] {
+    pointer-events: none;
+}
+
+[data-aos].aos-animate {
+    pointer-events: auto;
+}
+
+.partner-logo {
+    width: 120px;
+    height: auto;
+    margin: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.partner-logo:hover {
+    transform: scale(1.1);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+}
