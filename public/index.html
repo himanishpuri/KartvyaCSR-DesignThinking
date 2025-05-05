@@ -1,266 +1,565 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSR Connect | Bridging NGOs and Corporates</title>
-    
-    <!-- Core CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="./css/main_page.css" rel="stylesheet">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <span class="text-primary fw-bold">CSR</span>
-                <span class="text-dark">Connect</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarMain">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./html/howitworks.html">How It Works</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./html/successtories.html">Success Stories</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./html/aboutme.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./html/login.html">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-success ms-2" href="./html/select-type.html">Register Now</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>CSR Connect | Bridging NGOs and Corporates</title>
 
-    <!-- Hero Section with Slideshow -->
-    <section class="hero-section min-vh-100 d-flex align-items-center text-white position-relative">
-        <div class="hero-slideshow position-absolute w-100 h-100">
-            <div class="slides">
-                <div class="slide active" style="background-image: url('./images/ref (1).jpg');"></div>
-                <div class="slide" style="background-image: url('./images/ref (2).jpg');"></div>
-                <div class="slide" style="background-image: url('./images/ref (3).jpg');"></div>
-            </div>
-            <div class="overlay"></div>
-        </div>
-        <div class="container position-relative z-index-1">
-            <div class="row align-items-center">
-                <div class="col-lg-8 mx-auto text-center" data-aos="fade-right">
-                    <h1 class="display-4 fw-bold mb-4">Elevating Corporate Social Responsibility</h1>
-                    <p class="lead mb-4">CSR Connect is India's premier platform for aligning corporations with vetted NGOs, ensuring compliance, transparency, and measurable outcomes under the Companies Act, 2013.</p>
-                    <div class="d-flex gap-3 justify-content-center">
-                        <a href="#why-csr" class="btn btn-success btn-lg">Explore CSR Benefits</a>
-                        <a href="./html/select-type.html" class="btn btn-outline-light btn-lg">Get Started</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+		<!-- Core CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="./css/main_page.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<!-- Navigation -->
+		<nav
+			class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm"
+		>
+			<div class="container">
+				<a
+					class="navbar-brand"
+					href="index.html"
+				>
+					<span class="text-primary fw-bold">CSR</span>
+					<span class="text-dark">Connect</span>
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarMain"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div
+					class="collapse navbar-collapse"
+					id="navbarMain"
+				>
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								href="./html/howitworks.html"
+								>How It Works</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								href="./html/successtories.html"
+								>Success Stories</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								href="./html/partner-ngos.html"
+								>Partner NGOs</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								href="./html/aboutme.html"
+								>About Us</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								href="./html/login.html"
+								>Login</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="btn btn-success ms-2"
+								href="./html/select-type.html"
+								>Register Now</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
-    <!-- Why CSR Matters Section -->
-    <section id="why-csr" class="py-5 bg-light">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <h2 class="text-primary mb-4">Why CSR Matters</h2>
-                    <p class="lead mb-4">
-                        Corporate Social Responsibility (CSR) is not just a moral obligation—it's a strategic advantage. 
-                        Did you know that companies with strong CSR programs experience <strong>20% higher employee retention</strong> 
-                        and <strong>13% higher productivity</strong>? CSR also builds brand loyalty, with <strong>87% of consumers</strong> 
-                        more likely to support companies that advocate for social issues.
-                    </p>
-                    <a href="./html/howitworks.html" class="btn btn-success">Learn More</a>
-                </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <div class="why-csr-slideshow">
-                        <div class="slides">
-                            <div class="slide active" style="background-image: url('./images/ref (4).jpg');"></div>
-                            <div class="slide" style="background-image: url('./images/ref (5).jpg');"></div>
-                            <div class="slide" style="background-image: url('./images/ref (1).jpg');"></div>
-                            <div class="slide" style="background-image: url('./images/ref (2).jpg');"></div>
-                        </div>
-                        <div class="overlay"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+		<!-- Hero Section with Slideshow -->
+		<section
+			class="hero-section min-vh-100 d-flex align-items-center text-white position-relative"
+		>
+			<div class="hero-slideshow position-absolute w-100 h-100">
+				<div class="slides">
+					<div
+						class="slide active"
+						style="background-image: url('./images/ref (1).jpg')"
+					></div>
+					<div
+						class="slide"
+						style="background-image: url('./images/ref (2).jpg')"
+					></div>
+					<div
+						class="slide"
+						style="background-image: url('./images/ref (3).jpg')"
+					></div>
+				</div>
+				<div class="overlay"></div>
+			</div>
+			<div class="container position-relative z-index-1">
+				<div class="row align-items-center">
+					<div
+						class="col-lg-8 mx-auto text-center"
+						data-aos="fade-right"
+					>
+						<h1 class="display-4 fw-bold mb-4">
+							Elevating Corporate Social Responsibility
+						</h1>
+						<p class="lead mb-4">
+							CSR Connect is India's premier platform for aligning
+							corporations with vetted NGOs, ensuring compliance,
+							transparency, and measurable outcomes under the Companies
+							Act, 2013.
+						</p>
+						<div class="d-flex gap-3 justify-content-center">
+							<a
+								href="#why-csr"
+								class="btn btn-success btn-lg"
+								>Explore CSR Benefits</a
+							>
+							<a
+								href="./html/select-type.html"
+								class="btn btn-outline-light btn-lg"
+								>Get Started</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <!-- Trusted Clients Section -->
-    <section class="py-5 bg-light">
-        <div class="container text-center">
-            <div class="mb-5" data-aos="fade-up">
-                <h3 class="text-primary">Trusted By Leading Organizations</h3>
-                <p class="text-muted">Collaborating with changemakers across industries</p>
-            </div>
+		<!-- Why CSR Matters Section -->
+		<section
+			id="why-csr"
+			class="py-5 bg-light"
+		>
+			<div class="container">
+				<div class="row align-items-center">
+					<div
+						class="col-lg-6"
+						data-aos="fade-right"
+					>
+						<h2 class="text-primary mb-4">Why CSR Matters</h2>
+						<p class="lead mb-4">
+							Corporate Social Responsibility (CSR) is not just a moral
+							obligation—it's a strategic advantage. Did you know that
+							companies with strong CSR programs experience
+							<strong>20% higher employee retention</strong> and
+							<strong>13% higher productivity</strong>? CSR also builds
+							brand loyalty, with <strong>87% of consumers</strong>
+							more likely to support companies that advocate for social
+							issues.
+						</p>
+						<a
+							href="./html/howitworks.html"
+							class="btn btn-success"
+							>Learn More</a
+						>
+					</div>
+					<div
+						class="col-lg-6"
+						data-aos="fade-left"
+					>
+						<div class="why-csr-slideshow">
+							<div class="slides">
+								<div
+									class="slide active"
+									style="background-image: url('./images/ref (4).jpg')"
+								></div>
+								<div
+									class="slide"
+									style="background-image: url('./images/ref (5).jpg')"
+								></div>
+								<div
+									class="slide"
+									style="background-image: url('./images/ref (1).jpg')"
+								></div>
+								<div
+									class="slide"
+									style="background-image: url('./images/ref (2).jpg')"
+								></div>
+							</div>
+							<div class="overlay"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-            <div id="partnerCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="d-flex justify-content-center align-items-center flex-wrap">
-                            <img src="./images/logo(1).jpg" class="partner-logo" alt="Partner 1">
-                            <img src="./images/logo.jpg" class="partner-logo" alt="Partner 2">
-                            <img src="./images/logo3.jpg" class="partner-logo" alt="Partner 3">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="d-flex justify-content-center align-items-center flex-wrap">
-                            <img src="./images/logo2.jpg" class="partner-logo" alt="Partner 4">
-                            <img src="./images/logo4.jpg" class="partner-logo" alt="Partner 5">
-                            <img src="./images/logo5.jpg" class="partner-logo" alt="Partner 6">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="d-flex justify-content-center align-items-center flex-wrap">
-                            <img src="./images/logo6.jpg" class="partner-logo" alt="Partner 7">
-                            <img src="./images/logo7.jpg" class="partner-logo" alt="Partner 8">
-                            <img src="./images/logo2.jpg" class="partner-logo" alt="Partner 9">
-                        </div>
-                    </div>
-                </div>
+		<!-- Trusted Clients Section -->
+		<section class="py-5 bg-light">
+			<div class="container text-center">
+				<div
+					class="mb-5"
+					data-aos="fade-up"
+				>
+					<h3 class="text-primary">Trusted By Leading Organizations</h3>
+					<p class="text-muted">
+						Collaborating with changemakers across industries
+					</p>
+				</div>
 
-                <!-- Controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#partnerCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#partnerCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </button>
-            </div>
-        </div>
-    </section>
+				<div
+					id="partnerCarousel"
+					class="carousel slide"
+					data-bs-ride="carousel"
+				>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div
+								class="d-flex justify-content-center align-items-center flex-wrap"
+							>
+								<img
+									src="./images/logo(1).jpg"
+									class="partner-logo"
+									alt="Partner 1"
+								/>
+								<img
+									src="./images/logo.jpg"
+									class="partner-logo"
+									alt="Partner 2"
+								/>
+								<img
+									src="./images/logo3.jpg"
+									class="partner-logo"
+									alt="Partner 3"
+								/>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div
+								class="d-flex justify-content-center align-items-center flex-wrap"
+							>
+								<img
+									src="./images/logo2.jpg"
+									class="partner-logo"
+									alt="Partner 4"
+								/>
+								<img
+									src="./images/logo4.jpg"
+									class="partner-logo"
+									alt="Partner 5"
+								/>
+								<img
+									src="./images/logo5.jpg"
+									class="partner-logo"
+									alt="Partner 6"
+								/>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div
+								class="d-flex justify-content-center align-items-center flex-wrap"
+							>
+								<img
+									src="./images/logo6.jpg"
+									class="partner-logo"
+									alt="Partner 7"
+								/>
+								<img
+									src="./images/logo7.jpg"
+									class="partner-logo"
+									alt="Partner 8"
+								/>
+								<img
+									src="./images/logo2.jpg"
+									class="partner-logo"
+									alt="Partner 9"
+								/>
+							</div>
+						</div>
+					</div>
 
+					<!-- Controls -->
+					<button
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#partnerCarousel"
+						data-bs-slide="prev"
+					>
+						<span
+							class="carousel-control-prev-icon"
+							aria-hidden="true"
+						></span>
+					</button>
+					<button
+						class="carousel-control-next"
+						type="button"
+						data-bs-target="#partnerCarousel"
+						data-bs-slide="next"
+					>
+						<span
+							class="carousel-control-next-icon"
+							aria-hidden="true"
+						></span>
+					</button>
+				</div>
+			</div>
+		</section>
 
+		<!-- Stats Section -->
+		<section class="py-5">
+			<div class="container">
+				<div class="row g-4 text-center">
+					<div
+						class="col-md-3"
+						data-aos="fade-up"
+						data-aos-delay="100"
+					>
+						<div class="stat-card p-4 rounded shadow-sm bg-white">
+							<h2 class="text-primary mb-0">500+</h2>
+							<p class="text-muted mb-0">NGOs Registered</p>
+						</div>
+					</div>
+					<div
+						class="col-md-3"
+						data-aos="fade-up"
+						data-aos-delay="200"
+					>
+						<div class="stat-card p-4 rounded shadow-sm bg-white">
+							<h2 class="text-success mb-0">₹100Cr+</h2>
+							<p class="text-muted mb-0">CSR Funds Facilitated</p>
+						</div>
+					</div>
+					<div
+						class="col-md-3"
+						data-aos="fade-up"
+						data-aos-delay="300"
+					>
+						<div class="stat-card p-4 rounded shadow-sm bg-white">
+							<h2 class="text-primary mb-0">200+</h2>
+							<p class="text-muted mb-0">Corporate Partners</p>
+						</div>
+					</div>
+					<div
+						class="col-md-3"
+						data-aos="fade-up"
+						data-aos-delay="400"
+					>
+						<div class="stat-card p-4 rounded shadow-sm bg-white">
+							<h2 class="text-success mb-0">1000+</h2>
+							<p class="text-muted mb-0">Projects Completed</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
+		<!-- Testimonials -->
+		<section class="py-5">
+			<div class="container">
+				<div
+					class="text-center mb-5"
+					data-aos="fade-up"
+				>
+					<h3 class="text-primary">What Our Partners Say</h3>
+				</div>
+				<div class="row g-4">
+					<div
+						class="col-md-4"
+						data-aos="fade-up"
+					>
+						<div class="card h-100 shadow-sm text-center">
+							<div class="card-body">
+								<p class="text-muted mb-3">
+									"Working with Project CSR has streamlined our funding
+									process and allowed us to focus on high-impact
+									projects. A truly transformative experience."
+								</p>
+								<h6 class="mb-0">Jane Smith</h6>
+								<p class="text-muted">Sara Khan</p>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-md-4"
+						data-aos="fade-up"
+					>
+						<div class="card h-100 shadow-sm text-center">
+							<div class="card-body">
+								<p class="text-muted mb-3">
+									"The AI-powered NGO-Corporate matching at Project CSR
+									has helped us find partners aligned with our CSR
+									goals. Highly recommend their services."
+								</p>
+								<h6 class="mb-0">David Lee</h6>
+								<p class="text-muted">Mohammed Ahmed</p>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-md-4"
+						data-aos="fade-up"
+					>
+						<div class="card h-100 shadow-sm text-center">
+							<div class="card-body">
+								<p class="text-muted mb-3">
+									"Project CSR has simplified our CSR journey, from
+									finding NGOs to tracking our impact. A reliable and
+									efficient platform."
+								</p>
+								<h6 class="mb-0">Emily Chen</h6>
+								<p class="text-muted">Lila Patel</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <!-- Stats Section -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row g-4 text-center">
-                <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
-                    <div class="stat-card p-4 rounded shadow-sm bg-white">
-                        <h2 class="text-primary mb-0">500+</h2>
-                        <p class="text-muted mb-0">NGOs Registered</p>
-                    </div>
-                </div>
-                <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
-                    <div class="stat-card p-4 rounded shadow-sm bg-white">
-                        <h2 class="text-success mb-0">₹100Cr+</h2>
-                        <p class="text-muted mb-0">CSR Funds Facilitated</p>
-                    </div>
-                </div>
-                <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
-                    <div class="stat-card p-4 rounded shadow-sm bg-white">
-                        <h2 class="text-primary mb-0">200+</h2>
-                        <p class="text-muted mb-0">Corporate Partners</p>
-                    </div>
-                </div>
-                <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
-                    <div class="stat-card p-4 rounded shadow-sm bg-white">
-                        <h2 class="text-success mb-0">1000+</h2>
-                        <p class="text-muted mb-0">Projects Completed</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+		<!-- Footer -->
+		<footer class="bg-dark text-light py-5">
+			<div class="container">
+				<div class="row g-4">
+					<div class="col-md-4">
+						<h5 class="mb-3">About CSR Connect</h5>
+						<p
+							class="text-white"
+							style="text-decoration: none"
+						>
+							Bridging the gap between NGOs and Corporates to create
+							meaningful social impact through efficient CSR
+							collaboration.
+						</p>
+					</div>
+					<div class="col-md-2">
+						<h5 class="mb-3">Quick Links</h5>
+						<ul class="list-unstyled">
+							<li>
+								<a
+									href="index.html"
+									class="text-white"
+									style="text-decoration: none"
+									>Home</a
+								>
+							</li>
+							<li>
+								<a
+									href="./html/aboutme.html"
+									class="text-white"
+									style="text-decoration: none"
+									>About Us</a
+								>
+							</li>
+							<li>
+								<a
+									href="./html/howitworks.html"
+									class="text-white"
+									style="text-decoration: none"
+									>How It Works</a
+								>
+							</li>
+							<li>
+								<a
+									href="./html/successtories.html"
+									class="text-white"
+									style="text-decoration: none"
+									>Success Stories</a
+								>
+							</li>
+							<li>
+								<a
+									href="./html/partner-ngos.html"
+									class="text-white"
+									style="text-decoration: none"
+									>Partner NGOs</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-2">
+						<h5 class="mb-3">Resources</h5>
+						<ul class="list-unstyled">
+							<li>
+								<a
+									href="./html/faq.html"
+									class="text-white"
+									style="text-decoration: none"
+									>FAQs</a
+								>
+							</li>
+							<li>
+								<a
+									href="./html/blog.html"
+									class="text-white"
+									style="text-decoration: none"
+									>Blog</a
+								>
+							</li>
+							<li>
+								<a
+									href="./html/contact-us.html"
+									class="text-white"
+									style="text-decoration: none"
+									>Contact Us</a
+								>
+							</li>
+							<li>
+								<a
+									href="./html/privacy-policy.html"
+									class="text-white"
+									style="text-decoration: none"
+									>Privacy Policy</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<h5 class="mb-3">Newsletter</h5>
+						<p class="text-white">
+							Stay updated with the latest CSR news and success stories.
+						</p>
+						<form class="mb-3">
+							<div class="input-group">
+								<input
+									type="email"
+									class="form-control"
+									placeholder="Enter your email"
+								/>
+								<button
+									class="btn btn-success"
+									type="submit"
+								>
+									Subscribe
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<hr class="my-4" />
+				<div class="text-center text-white">
+					<small>&copy; 2024 CSR Connect. All rights reserved.</small>
+				</div>
+			</div>
+		</footer>
 
-    <!-- Testimonials -->
-    <section class="py-5">
-        <div class="container">
-            <div class="text-center mb-5" data-aos="fade-up">
-                <h3 class="text-primary">What Our Partners Say</h3>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-4" data-aos="fade-up">
-                    <div class="card h-100 shadow-sm text-center">
-                        <div class="card-body">
-                            <p class="text-muted mb-3">"Working with Project CSR has streamlined our funding process and allowed us to focus on high-impact projects. A truly transformative experience."</p>
-                            <h6 class="mb-0">Jane Smith</h6>
-                            <p class="text-muted">Sara Khan</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-up">
-                    <div class="card h-100 shadow-sm text-center">
-                        <div class="card-body">
-                            <p class="text-muted mb-3">"The AI-powered NGO-Corporate matching at Project CSR has helped us find partners aligned with our CSR goals. Highly recommend their services."</p>
-                            <h6 class="mb-0">David Lee</h6>
-                            <p class="text-muted">Mohammed Ahmed</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-up">
-                    <div class="card h-100 shadow-sm text-center">
-                        <div class="card-body">
-                            <p class="text-muted mb-3">"Project CSR has simplified our CSR journey, from finding NGOs to tracking our impact. A reliable and efficient platform."</p>
-                            <h6 class="mb-0">Emily Chen</h6>
-                            <p class="text-muted">Lila Patel</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-light py-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <h5 class="mb-3">About CSR Connect</h5>
-                    <p class="text-white" style="text-decoration: none;">Bridging the gap between NGOs and Corporates to create meaningful social impact through efficient CSR collaboration.</p>
-                </div>
-                <div class="col-md-2">
-                    <h5 class="mb-3">Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white" style="text-decoration: none;">Home</a></li>
-                        <li><a href="#" class="text-white" style="text-decoration: none;">About Us</a></li>
-                        <li><a href="#" class="text-white" style="text-decoration: none;">How It Works</a></li>
-                        <li><a href="#" class="text-white" style="text-decoration: none;">Success Stories</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <h5 class="mb-3">Resources</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white" style="text-decoration: none;">FAQs</a></li>
-                        <li><a href="#" class="text-white" style="text-decoration: none;">Blog</a></li>
-                        <li><a href="#" class="text-white" style="text-decoration: none;">Contact Us</a></li>
-                        <li><a href="#" class="text-white" style="text-decoration: none;">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5 class="mb-3">Newsletter</h5>
-                    <p class="text-white">Stay updated with the latest CSR news and success stories.</p>
-                    <form class="mb-3">
-                        <div class="input-group">
-                            <input type="email" class="form-control" placeholder="Enter your email">
-                            <button class="btn btn-success" type="submit">Subscribe</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <hr class="my-4">
-            <div class="text-center text-white">
-                <small>&copy; 2024 CSR Connect. All rights reserved.</small>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Core JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="./js/main.js"></script>
-</body>
+		<!-- Core JavaScript -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+		<script src="./js/main.js"></script>
+	</body>
 </html>

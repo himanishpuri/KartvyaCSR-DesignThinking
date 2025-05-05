@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1"
+		/>
+		<title>CSR Connect | Blog</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="../css/style.css"
+			rel="stylesheet"
+		/>
+		<style>
+			/* Blog specific styles */
+			body {
+				font-family: "Poppins", sans-serif;
+				background-color: var(--light-bg, #f7fafc);
+				margin: 0;
+				padding-top: 70px;
+			}
+			.blog-hero {
+				background: url("../images/ref\ \(3\).jpg") center/cover no-repeat;
+				min-height: 50vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				color: white;
+				text-align: center;
+				position: relative;
+			}
+			.blog-hero::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 0, 0, 0.6);
+			}
+			.blog-hero h1,
+			.blog-hero p {
+				position: relative;
+				z-index: 1;
+			}
+			.blog-card {
+				height: 100%;
+				transition: transform 0.3s ease, box-shadow 0.3s ease;
+				border-radius: 0.5rem;
+				overflow: hidden;
+				border: none;
+				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			}
+			.blog-card:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+			}
+			.blog-img {
+				height: 200px;
+				object-fit: cover;
+			}
+			.blog-tag {
+				display: inline-block;
+				padding: 0.25rem 0.75rem;
+				font-size: 0.75rem;
+				border-radius: 1rem;
+				margin-right: 0.5rem;
+				margin-bottom: 0.5rem;
+			}
+			.tag-csr {
+				background-color: #ebf8ff;
+				color: var(--primary-color, #2b6cb0);
+			}
+			.tag-ngo {
+				background-color: #f0fff4;
+				color: var(--success-color, #38a169);
+			}
+			.tag-impact {
+				background-color: #fff5f7;
+				color: #e53e3e;
+			}
+			.tag-corporate {
+				background-color: #edf2f7;
+				color: #4a5568;
+			}
+			.blog-meta {
+				display: flex;
+				align-items: center;
+				margin-bottom: 1rem;
+				font-size: 0.875rem;
+				color: #718096;
+			}
+			.blog-meta img {
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+				margin-right: 0.5rem;
+			}
+			.meta-divider {
+				margin: 0 0.5rem;
+			}
+			.sidebar-card {
+				padding: 1.5rem;
+				border-radius: 0.5rem;
+				background-color: white;
+				box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+				margin-bottom: 1.5rem;
+			}
+			.post-link {
+				color: inherit;
+				text-decoration: none;
+			}
+			.post-link:hover {
+				color: var(--primary-color, #2b6cb0);
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Navigation -->
+		<nav
+			class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm"
+		>
+			<div class="container">
+				<a
+					class="navbar-brand"
+					href="../index.html"
+				>
+					<span class="text-primary fw-bold">CSR</span>
+					<span class="text-dark">Connect</span>
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarMain"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div
+					class="collapse navbar-collapse"
+					id="navbarMain"
+				>
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								href="./howitworks.html"
+								>How It Works</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								href="./successtories.html"
+								>Success Stories</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								href="./aboutme.html"
+								>About Us</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								href="./login.html"
+								>Login</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="btn btn-success ms-2"
+								href="./select-type.html"
+								>Register Now</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Hero Section -->
+		<header class="blog-hero d-flex align-items-center">
+			<div class="container text-center">
+				<h1 data-aos="fade-up">CSR Connect Blog</h1>
+				<p
+					class="lead"
+					data-aos="fade-up"
+					data-aos-delay="200"
+				>
+					Insights, Stories, and Impact from the World of CSR
+				</p>
+			</div>
+		</header>
+
+		<!-- Blog Content -->
+		<section class="py-5">
+			<div class="container">
+				<div class="row">
+					<!-- Main Content -->
+					<div
+						class="col-lg-8"
+						data-aos="fade-up"
+					>
+						<!-- Featured Post -->
+						<div class="card blog-card mb-5">
+							<img
+								src="../images/ref (1).jpg"
+								class="blog-img"
+								alt="Featured Blog Post"
+							/>
+							<div class="card-body">
+								<div
+									class="d-flex justify-content-between align-items-center mb-2"
+								>
+									<div>
+										<span class="blog-tag tag-csr">CSR Strategy</span>
+										<span class="blog-tag tag-impact"
+											>Impact Measurement</span
+										>
+									</div>
+									<small class="text-muted">May 1, 2025</small>
+								</div>
+								<h3 class="card-title">
+									The Future of CSR: Trends to Watch in 2025
+								</h3>
+								<div class="blog-meta">
+									<img
+										src="https://ui-avatars.com/api/?name=Arun+Kumar&background=2b6cb0&color=fff"
+										alt="Author"
+									/>
+									<span>Arun Kumar</span>
+									<span class="meta-divider">•</span>
+									<span>8 min read</span>
+								</div>
+								<p class="card-text">
+									Corporate Social Responsibility is evolving rapidly,
+									with new approaches and technologies reshaping how
+									companies create social impact. In this comprehensive
+									analysis, we explore the key trends that will define
+									CSR in 2025 and beyond.
+								</p>
+								<p class="card-text">
+									From AI-powered impact measurement to collaborative
+									cross-sector partnerships, organizations are finding
+									innovative ways to align profit with purpose. The
+									most forward-thinking companies are integrating CSR
+									into their core business strategies rather than
+									treating it as a separate initiative.
+								</p>
+								<a
+									href="#"
+									class="btn btn-primary"
+									>Read More</a
+								>
+							</div>
+						</div>
+
+						<!-- Blog Posts Grid -->
+						<div class="row g-4">
+							<!-- Post 1 -->
+							<div class="col-md-6">
+								<div class="card blog-card h-100">
+									<img
+										src="../images/ref (2).jpg"
+										class="blog-img"
+										alt="Blog Post"
+									/>
+									<div class="card-body">
+										<div
+											class="d-flex justify-content-between align-items-center mb-2"
+										>
+											<div>
+												<span class="blog-tag tag-ngo"
+													>NGO Development</span
+												>
+											</div>
+											<small class="text-muted">Apr 22, 2025</small>
+										</div>
+										<h4 class="card-title">
+											How NGOs Can Leverage Digital Tools for Greater
+											Impact
+										</h4>
+										<div class="blog-meta">
+											<img
+												src="https://ui-avatars.com/api/?name=Priya+Singh&background=38a169&color=fff"
+												alt="Author"
+											/>
+											<span>Priya Singh</span>
+										</div>
+										<p class="card-text">
+											Digital transformation isn't just for
+											businesses. NGOs can significantly amplify
+											their impact through strategic use of
+											technology...
+										</p>
+										<a
+											href="#"
+											class="btn btn-outline-primary"
+											>Read More</a
+										>
+									</div>
+								</div>
+							</div>
+
+							<!-- Post 2 -->
+							<div class="col-md-6">
+								<div class="card blog-card h-100">
+									<img
+										src="../images/ref (4).jpg"
+										class="blog-img"
+										alt="Blog Post"
+									/>
+									<div class="card-body">
+										<div
+											class="d-flex justify-content-between align-items-center mb-2"
+										>
+											<div>
+												<span class="blog-tag tag-corporate"
+													>Corporate Strategy</span
+												>
+											</div>
+											<small class="text-muted">Apr 15, 2025</small>
+										</div>
+										<h4 class="card-title">
+											Building an Effective CSR Committee: Best
+											Practices
+										</h4>
+										<div class="blog-meta">
+											<img
+												src="https://ui-avatars.com/api/?name=Raj+Mehta&background=4a5568&color=fff"
+												alt="Author"
+											/>
+											<span>Raj Mehta</span>
+										</div>
+										<p class="card-text">
+											A well-structured CSR committee can be the
+											difference between performative philanthropy
+											and genuine social impact...
+										</p>
+										<a
+											href="#"
+											class="btn btn-outline-primary"
+											>Read More</a
+										>
+									</div>
+								</div>
+							</div>
+
+							<!-- Post 3 -->
+							<div class="col-md-6">
+								<div class="card blog-card h-100">
+									<img
+										src="../images/ref (5).jpg"
+										class="blog-img"
+										alt="Blog Post"
+									/>
+									<div class="card-body">
+										<div
+											class="d-flex justify-content-between align-items-center mb-2"
+										>
+											<div>
+												<span class="blog-tag tag-impact"
+													>Impact Measurement</span
+												>
+											</div>
+											<small class="text-muted">Apr 8, 2025</small>
+										</div>
+										<h4 class="card-title">
+											Beyond Numbers: Qualitative Approaches to
+											Measuring Social Impact
+										</h4>
+										<div class="blog-meta">
+											<img
+												src="https://ui-avatars.com/api/?name=Sarah+Thomas&background=e53e3e&color=fff"
+												alt="Author"
+											/>
+											<span>Sarah Thomas</span>
+										</div>
+										<p class="card-text">
+											While metrics and KPIs are important,
+											understanding the human stories and qualitative
+											changes your CSR initiatives create is equally
+											vital...
+										</p>
+										<a
+											href="#"
+											class="btn btn-outline-primary"
+											>Read More</a
+										>
+									</div>
+								</div>
+							</div>
+
+							<!-- Post 4 -->
+							<div class="col-md-6">
+								<div class="card blog-card h-100">
+									<img
+										src="../images/ref (3).jpg"
+										class="blog-img"
+										alt="Blog Post"
+									/>
+									<div class="card-body">
+										<div
+											class="d-flex justify-content-between align-items-center mb-2"
+										>
+											<div>
+												<span class="blog-tag tag-csr"
+													>CSR Strategy</span
+												>
+												<span class="blog-tag tag-ngo"
+													>NGO Partnerships</span
+												>
+											</div>
+											<small class="text-muted">Mar 30, 2025</small>
+										</div>
+										<h4 class="card-title">
+											Creating Sustainable NGO-Corporate Partnerships
+										</h4>
+										<div class="blog-meta">
+											<img
+												src="https://ui-avatars.com/api/?name=Vikram+Patel&background=2b6cb0&color=fff"
+												alt="Author"
+											/>
+											<span>Vikram Patel</span>
+										</div>
+										<p class="card-text">
+											The most impactful CSR initiatives come from
+											true partnerships rather than transactional
+											relationships. Here's how to build
+											sustainability...
+										</p>
+										<a
+											href="#"
+											class="btn btn-outline-primary"
+											>Read More</a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Pagination -->
+						<div class="d-flex justify-content-center mt-5">
+							<nav aria-label="Blog pagination">
+								<ul class="pagination">
+									<li class="page-item disabled">
+										<a
+											class="page-link"
+											href="#"
+											tabindex="-1"
+											aria-disabled="true"
+											>Previous</a
+										>
+									</li>
+									<li
+										class="page-item active"
+										aria-current="page"
+									>
+										<a
+											class="page-link"
+											href="#"
+											>1</a
+										>
+									</li>
+									<li class="page-item">
+										<a
+											class="page-link"
+											href="#"
+											>2</a
+										>
+									</li>
+									<li class="page-item">
+										<a
+											class="page-link"
+											href="#"
+											>3</a
+										>
+									</li>
+									<li class="page-item">
+										<a
+											class="page-link"
+											href="#"
+											>Next</a
+										>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+
+					<!-- Sidebar -->
+					<div class="col-lg-4">
+						<!-- Search -->
+						<div
+							class="sidebar-card"
+							data-aos="fade-up"
+						>
+							<h5 class="mb-3">Search</h5>
+							<div class="input-group">
+								<input
+									type="text"
+									class="form-control"
+									placeholder="Search articles..."
+								/>
+								<button
+									class="btn btn-primary"
+									type="button"
+								>
+									<i class="fas fa-search"></i>
+								</button>
+							</div>
+						</div>
+
+						<!-- Categories -->
+						<div
+							class="sidebar-card"
+							data-aos="fade-up"
+							data-aos-delay="100"
+						>
+							<h5 class="mb-3">Categories</h5>
+							<ul class="list-group list-group-flush">
+								<li
+									class="list-group-item d-flex justify-content-between align-items-center"
+								>
+									<a
+										href="#"
+										class="post-link"
+										>CSR Strategy</a
+									>
+									<span class="badge bg-primary rounded-pill">12</span>
+								</li>
+								<li
+									class="list-group-item d-flex justify-content-between align-items-center"
+								>
+									<a
+										href="#"
+										class="post-link"
+										>NGO Development</a
+									>
+									<span class="badge bg-success rounded-pill">8</span>
+								</li>
+								<li
+									class="list-group-item d-flex justify-content-between align-items-center"
+								>
+									<a
+										href="#"
+										class="post-link"
+										>Impact Measurement</a
+									>
+									<span class="badge bg-danger rounded-pill">5</span>
+								</li>
+								<li
+									class="list-group-item d-flex justify-content-between align-items-center"
+								>
+									<a
+										href="#"
+										class="post-link"
+										>Corporate Partnerships</a
+									>
+									<span class="badge bg-secondary rounded-pill"
+										>9</span
+									>
+								</li>
+								<li
+									class="list-group-item d-flex justify-content-between align-items-center"
+								>
+									<a
+										href="#"
+										class="post-link"
+										>Sustainability</a
+									>
+									<span class="badge bg-info rounded-pill">7</span>
+								</li>
+							</ul>
+						</div>
+
+						<!-- Popular Posts -->
+						<div
+							class="sidebar-card"
+							data-aos="fade-up"
+							data-aos-delay="200"
+						>
+							<h5 class="mb-3">Popular Posts</h5>
+							<div class="mb-3 pb-3 border-bottom">
+								<a
+									href="#"
+									class="post-link"
+								>
+									<h6 class="mb-1">
+										ESG Reporting: A Comprehensive Guide for Indian
+										Corporates
+									</h6>
+								</a>
+								<small class="text-muted"
+									>April 10, 2025 • 31K views</small
+								>
+							</div>
+							<div class="mb-3 pb-3 border-bottom">
+								<a
+									href="#"
+									class="post-link"
+								>
+									<h6 class="mb-1">
+										5 Ways Technology is Transforming CSR
+										Implementation
+									</h6>
+								</a>
+								<small class="text-muted"
+									>March 25, 2025 • 24K views</small
+								>
+							</div>
+							<div>
+								<a
+									href="#"
+									class="post-link"
+								>
+									<h6 class="mb-1">
+										Building Trust: Transparency in NGO Operations
+									</h6>
+								</a>
+								<small class="text-muted"
+									>March 12, 2025 • 19K views</small
+								>
+							</div>
+						</div>
+
+						<!-- Subscribe -->
+						<div
+							class="sidebar-card"
+							data-aos="fade-up"
+							data-aos-delay="300"
+						>
+							<h5 class="mb-3">Subscribe</h5>
+							<p>
+								Get the latest CSR insights delivered straight to your
+								inbox.
+							</p>
+							<form>
+								<div class="mb-3">
+									<input
+										type="email"
+										class="form-control"
+										placeholder="Your email address"
+										required
+									/>
+								</div>
+								<button
+									type="submit"
+									class="btn btn-success w-100"
+								>
+									Subscribe
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="bg-dark text-light py-5">
+			<div class="container">
+				<div class="row g-4">
+					<div class="col-md-4">
+						<h5>About CSR Connect</h5>
+						<p>
+							Bridging the gap between NGOs and Corporates to create
+							meaningful social impact through efficient CSR
+							collaboration.
+						</p>
+					</div>
+					<div class="col-md-2">
+						<h5>Quick Links</h5>
+						<ul class="list-unstyled">
+							<li>
+								<a
+									href="../index.html"
+									class="text-white"
+									>Home</a
+								>
+							</li>
+							<li>
+								<a
+									href="./aboutme.html"
+									class="text-white"
+									>About Us</a
+								>
+							</li>
+							<li>
+								<a
+									href="./howitworks.html"
+									class="text-white"
+									>How It Works</a
+								>
+							</li>
+							<li>
+								<a
+									href="./successtories.html"
+									class="text-white"
+									>Success Stories</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-2">
+						<h5>Resources</h5>
+						<ul class="list-unstyled">
+							<li>
+								<a
+									href="./faq.html"
+									class="text-white"
+									>FAQs</a
+								>
+							</li>
+							<li>
+								<a
+									href="./blog.html"
+									class="text-white"
+									>Blog</a
+								>
+							</li>
+							<li>
+								<a
+									href="./contact-us.html"
+									class="text-white"
+									>Contact Us</a
+								>
+							</li>
+							<li>
+								<a
+									href="./privacy-policy.html"
+									class="text-white"
+									>Privacy Policy</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<h5>Newsletter</h5>
+						<p>
+							Stay updated with the latest CSR news and success stories.
+						</p>
+						<form>
+							<div class="input-group">
+								<input
+									type="email"
+									class="form-control"
+									placeholder="Enter your email"
+								/>
+								<button
+									class="btn btn-success"
+									type="submit"
+								>
+									Subscribe
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<hr class="my-4" />
+				<div class="text-center">
+					<small>&copy; 2024 CSR Connect. All rights reserved.</small>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Core JavaScript -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+		<script>
+			// Initialize AOS
+			AOS.init({
+				duration: 800,
+				once: true,
+			});
+		</script>
+	</body>
+</html>
