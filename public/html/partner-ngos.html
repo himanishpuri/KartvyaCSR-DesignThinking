@@ -2,7 +2,10 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1"
+		/>
 		<title>CSR Connect | Partner NGOs</title>
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -27,7 +30,8 @@
 		<style>
 			/* Additional styles for Partner NGOs page */
 			.ngo-hero {
-				background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/ref (5).jpg');
+				background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+					url("../images/ref (5).jpg");
 				background-size: cover;
 				background-position: center;
 				height: 50vh;
@@ -35,7 +39,7 @@
 				align-items: center;
 				color: white;
 			}
-			
+
 			.ngo-card {
 				border-radius: 0.5rem;
 				overflow: hidden;
@@ -43,20 +47,20 @@
 				transition: transform 0.3s;
 				height: 100%;
 			}
-			
+
 			.ngo-card:hover {
 				transform: translateY(-5px);
 			}
-			
+
 			.ngo-card-img {
 				height: 200px;
 				object-fit: cover;
 			}
-			
+
 			.ngo-card-body {
 				padding: 1.5rem;
 			}
-			
+
 			.ngo-badge {
 				padding: 0.35rem 0.65rem;
 				border-radius: 50px;
@@ -66,19 +70,19 @@
 				margin-bottom: 0.5rem;
 				display: inline-block;
 			}
-			
+
 			.category-section {
 				padding: 3rem 0;
 			}
-			
+
 			.category-title {
 				position: relative;
 				margin-bottom: 2rem;
 				padding-bottom: 0.5rem;
 			}
-			
+
 			.category-title:after {
-				content: '';
+				content: "";
 				position: absolute;
 				bottom: 0;
 				left: 0;
@@ -86,24 +90,24 @@
 				height: 3px;
 				background-color: var(--bs-primary);
 			}
-			
+
 			.stats-section {
 				background-color: #f8f9fa;
 				padding: 3rem 0;
 			}
-			
+
 			.stat-item {
 				text-align: center;
 				padding: 2rem;
 			}
-			
+
 			.stat-item h3 {
 				font-size: 2.5rem;
 				font-weight: 700;
 				margin-bottom: 0.5rem;
 				color: var(--bs-primary);
 			}
-			
+
 			.stat-item p {
 				color: #6c757d;
 				margin: 0;
@@ -118,9 +122,14 @@
 	</head>
 	<body>
 		<!-- Navigation -->
-		<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
+		<nav
+			class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm"
+		>
 			<div class="container">
-				<a class="navbar-brand" href="../index.html">
+				<a
+					class="navbar-brand"
+					href="../index.html"
+				>
 					<span class="text-primary fw-bold">CSR</span>
 					<span class="text-dark">Connect</span>
 				</a>
@@ -132,25 +141,52 @@
 				>
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarMain">
+				<div
+					class="collapse navbar-collapse"
+					id="navbarMain"
+				>
 					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link" href="./howitworks.html">How It Works</a>
+							<a
+								class="nav-link"
+								href="./howitworks.html"
+								>How It Works</a
+							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="./successtories.html">Success Stories</a>
+							<a
+								class="nav-link"
+								href="./successtories.html"
+								>Success Stories</a
+							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link active" href="./partner-ngos.html">Partner NGOs</a>
+							<a
+								class="nav-link active"
+								href="./partner-ngos.html"
+								>Partner NGOs</a
+							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="./aboutme.html">About Us</a>
+							<a
+								class="nav-link"
+								href="./aboutme.html"
+								>About Us</a
+							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="./login.html">Login</a>
+							<a
+								class="nav-link"
+								href="./login.html"
+								>Login</a
+							>
 						</li>
 						<li class="nav-item">
-							<a class="btn btn-success ms-2" href="./select-type.html">Register Now</a>
+							<a
+								class="btn btn-success ms-2"
+								href="./select-type.html"
+								>Register Now</a
+							>
 						</li>
 					</ul>
 				</div>
@@ -161,8 +197,13 @@
 		<header class="ngo-hero">
 			<div class="container text-center">
 				<h1 data-aos="fade-up">Our Partner NGOs</h1>
-				<p class="lead" data-aos="fade-up" data-aos-delay="200">
-					Meet the change-makers who are creating lasting impact with CSR Connect
+				<p
+					class="lead"
+					data-aos="fade-up"
+					data-aos-delay="200"
+				>
+					Meet the change-makers who are creating lasting impact with CSR
+					Connect
 				</p>
 			</div>
 		</header>
@@ -172,65 +213,138 @@
 			<div class="container">
 				<div class="row mb-4">
 					<div class="col-12 text-center">
-						<h2 class="text-primary" data-aos="fade-up">Featured Partners</h2>
-						<p class="text-muted" data-aos="fade-up" data-aos-delay="100">
+						<h2
+							class="text-primary"
+							data-aos="fade-up"
+						>
+							Featured Partners
+						</h2>
+						<p
+							class="text-muted"
+							data-aos="fade-up"
+							data-aos-delay="100"
+						>
 							Discover our most impactful NGO collaborations
 						</p>
 					</div>
 				</div>
 				<div class="row g-4">
 					<!-- Featured NGO 1 -->
-					<div class="col-md-4" data-aos="fade-up">
+					<div
+						class="col-md-4"
+						data-aos="fade-up"
+					>
 						<div class="ngo-card">
-							<img src="../images/ref (1).jpg" class="ngo-card-img w-100" alt="Hope Foundation">
+							<img
+								src="../images/ref (1).jpg"
+								class="ngo-card-img w-100"
+								alt="Hope Foundation"
+							/>
 							<div class="ngo-card-body">
-								<span class="ngo-badge bg-primary text-white">Education</span>
-								<span class="ngo-badge bg-success text-white">Child Welfare</span>
+								<span class="ngo-badge bg-primary text-white"
+									>Education</span
+								>
+								<span class="ngo-badge bg-success text-white"
+									>Child Welfare</span
+								>
 								<h4 class="mt-3">Hope Foundation</h4>
 								<p class="text-muted">
-									Providing quality education and healthcare to underprivileged children across rural India since 2005.
+									Providing quality education and healthcare to
+									underprivileged children across rural India since
+									2005.
 								</p>
-								<div class="d-flex justify-content-between align-items-center mt-3">
+								<div
+									class="d-flex justify-content-between align-items-center mt-3"
+								>
 									<small class="text-muted">12 Active Projects</small>
-									<button class="btn btn-sm btn-outline-primary">View Profile</button>
+									<button
+										class="btn btn-sm btn-outline-primary"
+										data-bs-toggle="modal"
+										data-bs-target="#hopeFoundationModal"
+									>
+										View Profile
+									</button>
 								</div>
 							</div>
 						</div>
 					</div>
-					
+
 					<!-- Featured NGO 2 -->
-					<div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+					<div
+						class="col-md-4"
+						data-aos="fade-up"
+						data-aos-delay="100"
+					>
 						<div class="ngo-card">
-							<img src="../images/ref (2).jpg" class="ngo-card-img w-100" alt="Green Earth Initiative">
+							<img
+								src="../images/ref (2).jpg"
+								class="ngo-card-img w-100"
+								alt="Green Earth Initiative"
+							/>
 							<div class="ngo-card-body">
-								<span class="ngo-badge bg-success text-white">Environment</span>
-								<span class="ngo-badge bg-info text-white">Sustainability</span>
+								<span class="ngo-badge bg-success text-white"
+									>Environment</span
+								>
+								<span class="ngo-badge bg-info text-white"
+									>Sustainability</span
+								>
 								<h4 class="mt-3">Green Earth Initiative</h4>
 								<p class="text-muted">
-									Working towards environmental conservation through tree plantation drives and sustainable farming practices.
+									Working towards environmental conservation through
+									tree plantation drives and sustainable farming
+									practices.
 								</p>
-								<div class="d-flex justify-content-between align-items-center mt-3">
+								<div
+									class="d-flex justify-content-between align-items-center mt-3"
+								>
 									<small class="text-muted">8 Active Projects</small>
-									<button class="btn btn-sm btn-outline-primary">View Profile</button>
+									<button
+										class="btn btn-sm btn-outline-primary"
+										data-bs-toggle="modal"
+										data-bs-target="#greenEarthModal"
+									>
+										View Profile
+									</button>
 								</div>
 							</div>
 						</div>
 					</div>
-					
+
 					<!-- Featured NGO 3 -->
-					<div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+					<div
+						class="col-md-4"
+						data-aos="fade-up"
+						data-aos-delay="200"
+					>
 						<div class="ngo-card">
-							<img src="../images/ref (3).jpg" class="ngo-card-img w-100" alt="Women Empowerment Foundation">
+							<img
+								src="../images/ref (3).jpg"
+								class="ngo-card-img w-100"
+								alt="Women Empowerment Foundation"
+							/>
 							<div class="ngo-card-body">
-								<span class="ngo-badge bg-danger text-white">Women Empowerment</span>
-								<span class="ngo-badge bg-warning text-dark">Skill Development</span>
+								<span class="ngo-badge bg-danger text-white"
+									>Women Empowerment</span
+								>
+								<span class="ngo-badge bg-warning text-dark"
+									>Skill Development</span
+								>
 								<h4 class="mt-3">Shakti Foundation</h4>
 								<p class="text-muted">
-									Empowering women through vocational training, microfinance, and entrepreneurship opportunities.
+									Empowering women through vocational training,
+									microfinance, and entrepreneurship opportunities.
 								</p>
-								<div class="d-flex justify-content-between align-items-center mt-3">
+								<div
+									class="d-flex justify-content-between align-items-center mt-3"
+								>
 									<small class="text-muted">10 Active Projects</small>
-									<button class="btn btn-sm btn-outline-primary">View Profile</button>
+									<button
+										class="btn btn-sm btn-outline-primary"
+										data-bs-toggle="modal"
+										data-bs-target="#shaktiFoundationModal"
+									>
+										View Profile
+									</button>
 								</div>
 							</div>
 						</div>
@@ -244,15 +358,27 @@
 			<div class="container">
 				<div class="row mb-4">
 					<div class="col-12 text-center">
-						<h2 class="text-primary" data-aos="fade-up">NGOs by Focus Area</h2>
-						<p class="text-muted" data-aos="fade-up" data-aos-delay="100">
+						<h2
+							class="text-primary"
+							data-aos="fade-up"
+						>
+							NGOs by Focus Area
+						</h2>
+						<p
+							class="text-muted"
+							data-aos="fade-up"
+							data-aos-delay="100"
+						>
 							Discover organizations making impact in different sectors
 						</p>
 					</div>
 				</div>
-				
+
 				<!-- Education Category -->
-				<div class="row mb-5" data-aos="fade-up">
+				<div
+					class="row mb-5"
+					data-aos="fade-up"
+				>
 					<div class="col-md-3">
 						<h3 class="category-title">Education</h3>
 					</div>
@@ -263,13 +389,22 @@
 									<div class="ngo-card-body">
 										<h5>Vidya Foundation</h5>
 										<p class="text-muted small">
-											Providing quality education to 50,000+ children through digital learning centers in 15 states.
+											Providing quality education to 50,000+ children
+											through digital learning centers in 15 states.
 										</p>
-										<div class="progress mb-2" style="height: 5px;">
-											<div class="progress-bar bg-success" style="width: 85%"></div>
+										<div
+											class="progress mb-2"
+											style="height: 5px"
+										>
+											<div
+												class="progress-bar bg-success"
+												style="width: 85%"
+											></div>
 										</div>
 										<div class="d-flex justify-content-between">
-											<small class="text-muted">Impact Score: 85%</small>
+											<small class="text-muted"
+												>Impact Score: 85%</small
+											>
 											<small class="text-success">Verified</small>
 										</div>
 									</div>
@@ -280,13 +415,23 @@
 									<div class="ngo-card-body">
 										<h5>Akshar Learning Society</h5>
 										<p class="text-muted small">
-											Transforming rural education through teacher training programs and innovative learning methods.
+											Transforming rural education through teacher
+											training programs and innovative learning
+											methods.
 										</p>
-										<div class="progress mb-2" style="height: 5px;">
-											<div class="progress-bar bg-success" style="width: 92%"></div>
+										<div
+											class="progress mb-2"
+											style="height: 5px"
+										>
+											<div
+												class="progress-bar bg-success"
+												style="width: 92%"
+											></div>
 										</div>
 										<div class="d-flex justify-content-between">
-											<small class="text-muted">Impact Score: 92%</small>
+											<small class="text-muted"
+												>Impact Score: 92%</small
+											>
 											<small class="text-success">Verified</small>
 										</div>
 									</div>
@@ -295,9 +440,13 @@
 						</div>
 					</div>
 				</div>
-				
+
 				<!-- Healthcare Category -->
-				<div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
+				<div
+					class="row mb-5"
+					data-aos="fade-up"
+					data-aos-delay="100"
+				>
 					<div class="col-md-3">
 						<h3 class="category-title">Healthcare</h3>
 					</div>
@@ -308,13 +457,23 @@
 									<div class="ngo-card-body">
 										<h5>Rural Health Mission</h5>
 										<p class="text-muted small">
-											Providing healthcare services to remote villages through mobile clinics and telemedicine.
+											Providing healthcare services to remote
+											villages through mobile clinics and
+											telemedicine.
 										</p>
-										<div class="progress mb-2" style="height: 5px;">
-											<div class="progress-bar bg-success" style="width: 88%"></div>
+										<div
+											class="progress mb-2"
+											style="height: 5px"
+										>
+											<div
+												class="progress-bar bg-success"
+												style="width: 88%"
+											></div>
 										</div>
 										<div class="d-flex justify-content-between">
-											<small class="text-muted">Impact Score: 88%</small>
+											<small class="text-muted"
+												>Impact Score: 88%</small
+											>
 											<small class="text-success">Verified</small>
 										</div>
 									</div>
@@ -325,13 +484,23 @@
 									<div class="ngo-card-body">
 										<h5>Swasthya Foundation</h5>
 										<p class="text-muted small">
-											Promoting preventive healthcare through awareness camps and nutrition programs for mothers and children.
+											Promoting preventive healthcare through
+											awareness camps and nutrition programs for
+											mothers and children.
 										</p>
-										<div class="progress mb-2" style="height: 5px;">
-											<div class="progress-bar bg-success" style="width: 90%"></div>
+										<div
+											class="progress mb-2"
+											style="height: 5px"
+										>
+											<div
+												class="progress-bar bg-success"
+												style="width: 90%"
+											></div>
 										</div>
 										<div class="d-flex justify-content-between">
-											<small class="text-muted">Impact Score: 90%</small>
+											<small class="text-muted"
+												>Impact Score: 90%</small
+											>
 											<small class="text-success">Verified</small>
 										</div>
 									</div>
@@ -340,9 +509,13 @@
 						</div>
 					</div>
 				</div>
-				
+
 				<!-- Environment Category -->
-				<div class="row mb-5" data-aos="fade-up" data-aos-delay="200">
+				<div
+					class="row mb-5"
+					data-aos="fade-up"
+					data-aos-delay="200"
+				>
 					<div class="col-md-3">
 						<h3 class="category-title">Environment</h3>
 					</div>
@@ -353,13 +526,23 @@
 									<div class="ngo-card-body">
 										<h5>EcoVision India</h5>
 										<p class="text-muted small">
-											Leading afforestation initiatives with 5 million+ trees planted across degraded landscapes.
+											Leading afforestation initiatives with 5
+											million+ trees planted across degraded
+											landscapes.
 										</p>
-										<div class="progress mb-2" style="height: 5px;">
-											<div class="progress-bar bg-success" style="width: 94%"></div>
+										<div
+											class="progress mb-2"
+											style="height: 5px"
+										>
+											<div
+												class="progress-bar bg-success"
+												style="width: 94%"
+											></div>
 										</div>
 										<div class="d-flex justify-content-between">
-											<small class="text-muted">Impact Score: 94%</small>
+											<small class="text-muted"
+												>Impact Score: 94%</small
+											>
 											<small class="text-success">Verified</small>
 										</div>
 									</div>
@@ -370,13 +553,23 @@
 									<div class="ngo-card-body">
 										<h5>Clean Waters Initiative</h5>
 										<p class="text-muted small">
-											Working on river cleaning projects and providing clean drinking water solutions to rural areas.
+											Working on river cleaning projects and
+											providing clean drinking water solutions to
+											rural areas.
 										</p>
-										<div class="progress mb-2" style="height: 5px;">
-											<div class="progress-bar bg-success" style="width: 87%"></div>
+										<div
+											class="progress mb-2"
+											style="height: 5px"
+										>
+											<div
+												class="progress-bar bg-success"
+												style="width: 87%"
+											></div>
 										</div>
 										<div class="d-flex justify-content-between">
-											<small class="text-muted">Impact Score: 87%</small>
+											<small class="text-muted"
+												>Impact Score: 87%</small
+											>
 											<small class="text-success">Verified</small>
 										</div>
 									</div>
@@ -385,9 +578,13 @@
 						</div>
 					</div>
 				</div>
-				
+
 				<!-- Women Empowerment Category -->
-				<div class="row" data-aos="fade-up" data-aos-delay="300">
+				<div
+					class="row"
+					data-aos="fade-up"
+					data-aos-delay="300"
+				>
 					<div class="col-md-3">
 						<h3 class="category-title">Women Empowerment</h3>
 					</div>
@@ -398,13 +595,22 @@
 									<div class="ngo-card-body">
 										<h5>Naari Shakti</h5>
 										<p class="text-muted small">
-											Empowering women through self-help groups, skill development, and microfinance programs.
+											Empowering women through self-help groups,
+											skill development, and microfinance programs.
 										</p>
-										<div class="progress mb-2" style="height: 5px;">
-											<div class="progress-bar bg-success" style="width: 91%"></div>
+										<div
+											class="progress mb-2"
+											style="height: 5px"
+										>
+											<div
+												class="progress-bar bg-success"
+												style="width: 91%"
+											></div>
 										</div>
 										<div class="d-flex justify-content-between">
-											<small class="text-muted">Impact Score: 91%</small>
+											<small class="text-muted"
+												>Impact Score: 91%</small
+											>
 											<small class="text-success">Verified</small>
 										</div>
 									</div>
@@ -415,13 +621,22 @@
 									<div class="ngo-card-body">
 										<h5>Udyogini</h5>
 										<p class="text-muted small">
-											Fostering women entrepreneurship through mentoring, training, and market linkages.
+											Fostering women entrepreneurship through
+											mentoring, training, and market linkages.
 										</p>
-										<div class="progress mb-2" style="height: 5px;">
-											<div class="progress-bar bg-success" style="width: 89%"></div>
+										<div
+											class="progress mb-2"
+											style="height: 5px"
+										>
+											<div
+												class="progress-bar bg-success"
+												style="width: 89%"
+											></div>
 										</div>
 										<div class="d-flex justify-content-between">
-											<small class="text-muted">Impact Score: 89%</small>
+											<small class="text-muted"
+												>Impact Score: 89%</small
+											>
 											<small class="text-success">Verified</small>
 										</div>
 									</div>
@@ -430,8 +645,11 @@
 						</div>
 					</div>
 				</div>
-				
-				<div class="view-all-btn" data-aos="fade-up">
+
+				<div
+					class="view-all-btn"
+					data-aos="fade-up"
+				>
 					<button class="btn btn-primary">View All NGO Partners</button>
 				</div>
 			</div>
@@ -442,33 +660,58 @@
 			<div class="container">
 				<div class="row mb-4">
 					<div class="col-12 text-center">
-						<h2 class="text-primary" data-aos="fade-up">Our Collective Impact</h2>
-						<p class="text-muted" data-aos="fade-up" data-aos-delay="100">
-							Together with our NGO partners, we've created meaningful change
+						<h2
+							class="text-primary"
+							data-aos="fade-up"
+						>
+							Our Collective Impact
+						</h2>
+						<p
+							class="text-muted"
+							data-aos="fade-up"
+							data-aos-delay="100"
+						>
+							Together with our NGO partners, we've created meaningful
+							change
 						</p>
 					</div>
 				</div>
-				
+
 				<div class="row">
-					<div class="col-md-3" data-aos="fade-up">
+					<div
+						class="col-md-3"
+						data-aos="fade-up"
+					>
 						<div class="stat-item">
 							<h3>500+</h3>
 							<p>NGO Partners</p>
 						</div>
 					</div>
-					<div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+					<div
+						class="col-md-3"
+						data-aos="fade-up"
+						data-aos-delay="100"
+					>
 						<div class="stat-item">
 							<h3>₹100 Cr+</h3>
 							<p>CSR Funds Deployed</p>
 						</div>
 					</div>
-					<div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+					<div
+						class="col-md-3"
+						data-aos="fade-up"
+						data-aos-delay="200"
+					>
 						<div class="stat-item">
 							<h3>1000+</h3>
 							<p>Projects Completed</p>
 						</div>
 					</div>
-					<div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+					<div
+						class="col-md-3"
+						data-aos="fade-up"
+						data-aos-delay="300"
+					>
 						<div class="stat-item">
 							<h3>5M+</h3>
 							<p>Lives Impacted</p>
@@ -481,13 +724,31 @@
 		<!-- Call to Action -->
 		<section class="py-5 bg-primary text-white">
 			<div class="container text-center">
-				<h2 data-aos="fade-up">Join our growing network of change-makers</h2>
-				<p class="mb-4" data-aos="fade-up" data-aos-delay="100">
-					Whether you're an NGO looking for CSR funding or a corporate wanting to create impact,<br>CSR Connect is your platform.
+				<h2 data-aos="fade-up">
+					Join our growing network of change-makers
+				</h2>
+				<p
+					class="mb-4"
+					data-aos="fade-up"
+					data-aos-delay="100"
+				>
+					Whether you're an NGO looking for CSR funding or a corporate
+					wanting to create impact,<br />CSR Connect is your platform.
 				</p>
-				<div data-aos="fade-up" data-aos-delay="200">
-					<a href="./select-type.html" class="btn btn-light btn-lg me-2">Register Now</a>
-					<a href="./howitworks.html" class="btn btn-outline-light btn-lg">Learn More</a>
+				<div
+					data-aos="fade-up"
+					data-aos-delay="200"
+				>
+					<a
+						href="./select-type.html"
+						class="btn btn-light btn-lg me-2"
+						>Register Now</a
+					>
+					<a
+						href="./howitworks.html"
+						class="btn btn-outline-light btn-lg"
+						>Learn More</a
+					>
 				</div>
 			</div>
 		</section>
@@ -508,19 +769,39 @@
 						<h5>Quick Links</h5>
 						<ul class="list-unstyled">
 							<li>
-								<a href="../index.html" class="text-white">Home</a>
+								<a
+									href="../index.html"
+									class="text-white"
+									>Home</a
+								>
 							</li>
 							<li>
-								<a href="./aboutme.html" class="text-white">About Us</a>
+								<a
+									href="./aboutme.html"
+									class="text-white"
+									>About Us</a
+								>
 							</li>
 							<li>
-								<a href="./howitworks.html" class="text-white">How It Works</a>
+								<a
+									href="./howitworks.html"
+									class="text-white"
+									>How It Works</a
+								>
 							</li>
 							<li>
-								<a href="./successtories.html" class="text-white">Success Stories</a>
+								<a
+									href="./successtories.html"
+									class="text-white"
+									>Success Stories</a
+								>
 							</li>
 							<li>
-								<a href="./partner-ngos.html" class="text-white">Partner NGOs</a>
+								<a
+									href="./partner-ngos.html"
+									class="text-white"
+									>Partner NGOs</a
+								>
 							</li>
 						</ul>
 					</div>
@@ -528,16 +809,32 @@
 						<h5>Resources</h5>
 						<ul class="list-unstyled">
 							<li>
-								<a href="./faq.html" class="text-white">FAQs</a>
+								<a
+									href="./faq.html"
+									class="text-white"
+									>FAQs</a
+								>
 							</li>
 							<li>
-								<a href="./blog.html" class="text-white">Blog</a>
+								<a
+									href="./blog.html"
+									class="text-white"
+									>Blog</a
+								>
 							</li>
 							<li>
-								<a href="./contact-us.html" class="text-white">Contact Us</a>
+								<a
+									href="./contact-us.html"
+									class="text-white"
+									>Contact Us</a
+								>
 							</li>
 							<li>
-								<a href="./privacy-policy.html" class="text-white">Privacy Policy</a>
+								<a
+									href="./privacy-policy.html"
+									class="text-white"
+									>Privacy Policy</a
+								>
 							</li>
 						</ul>
 					</div>
@@ -548,8 +845,17 @@
 						</p>
 						<form>
 							<div class="input-group">
-								<input type="email" class="form-control" placeholder="Enter your email" />
-								<button class="btn btn-success" type="submit">Subscribe</button>
+								<input
+									type="email"
+									class="form-control"
+									placeholder="Enter your email"
+								/>
+								<button
+									class="btn btn-success"
+									type="submit"
+								>
+									Subscribe
+								</button>
 							</div>
 						</form>
 					</div>
@@ -564,14 +870,679 @@
 		<!-- Core JavaScript -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+		<!-- NGO Profile Modals -->
+		<!-- Hope Foundation Modal -->
+		<div
+			class="modal fade"
+			id="hopeFoundationModal"
+			tabindex="-1"
+			aria-labelledby="hopeFoundationModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5
+							class="modal-title"
+							id="hopeFoundationModalLabel"
+						>
+							Hope Foundation
+						</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-4">
+								<img
+									src="../images/ref (1).jpg"
+									class="w-100 rounded"
+									alt="Hope Foundation"
+								/>
+								<div class="mt-3">
+									<span class="ngo-badge bg-primary text-white"
+										>Education</span
+									>
+									<span class="ngo-badge bg-success text-white"
+										>Child Welfare</span
+									>
+								</div>
+								<div class="mt-3">
+									<h6 class="mb-2">Impact Score: 92%</h6>
+									<div
+										class="progress mb-2"
+										style="height: 8px"
+									>
+										<div
+											class="progress-bar bg-success"
+											style="width: 92%"
+										></div>
+									</div>
+									<small class="text-success"
+										>Verified Organization</small
+									>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<h4 class="mb-3">About Hope Foundation</h4>
+								<p>
+									Hope Foundation was established in 2005 with a
+									mission to provide quality education and healthcare
+									to underprivileged children in rural India. Over the
+									past two decades, we have extended our reach to over
+									200 villages across 15 states, impacting over 50,000
+									children annually.
+								</p>
+
+								<h5 class="mt-4 mb-3">Key Focus Areas</h5>
+								<ul>
+									<li>Primary education in rural communities</li>
+									<li>Healthcare and nutrition for children</li>
+									<li>Digital literacy programs</li>
+									<li>Teacher training and capacity building</li>
+									<li>Infrastructure development for schools</li>
+								</ul>
+
+								<h5 class="mt-4 mb-3">Achievements</h5>
+								<ul>
+									<li>
+										Established 120+ learning centers in remote
+										villages
+									</li>
+									<li>
+										Trained 2000+ teachers in modern teaching
+										methodologies
+									</li>
+									<li>
+										Achieved 95% retention rate in schools we support
+									</li>
+									<li>
+										Distributed learning materials to 100,000+
+										students
+									</li>
+								</ul>
+
+								<h5 class="mt-4 mb-3">Current Projects</h5>
+								<div class="row g-3">
+									<div class="col-md-6">
+										<div class="card h-100 shadow-sm">
+											<div class="card-body">
+												<h6>Digital Classroom Initiative</h6>
+												<p class="small text-muted">
+													Setting up 50 digital classrooms in
+													remote villages of Rajasthan and Madhya
+													Pradesh.
+												</p>
+												<div
+													class="progress mt-2"
+													style="height: 5px"
+												>
+													<div
+														class="progress-bar bg-primary"
+														style="width: 65%"
+													></div>
+												</div>
+												<small class="text-muted"
+													>65% Complete</small
+												>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="card h-100 shadow-sm">
+											<div class="card-body">
+												<h6>School Health Program</h6>
+												<p class="small text-muted">
+													Providing regular health checkups and
+													nutrition support to 15,000 children.
+												</p>
+												<div
+													class="progress mt-2"
+													style="height: 5px"
+												>
+													<div
+														class="progress-bar bg-success"
+														style="width: 80%"
+													></div>
+												</div>
+												<small class="text-muted"
+													>80% Complete</small
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-secondary"
+							data-bs-dismiss="modal"
+						>
+							Close
+						</button>
+						<button
+							type="button"
+							class="btn btn-success"
+						>
+							Support This NGO
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Green Earth Initiative Modal -->
+		<div
+			class="modal fade"
+			id="greenEarthModal"
+			tabindex="-1"
+			aria-labelledby="greenEarthModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5
+							class="modal-title"
+							id="greenEarthModalLabel"
+						>
+							Green Earth Initiative
+						</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-4">
+								<img
+									src="../images/ref (2).jpg"
+									class="w-100 rounded"
+									alt="Green Earth Initiative"
+								/>
+								<div class="mt-3">
+									<span class="ngo-badge bg-success text-white"
+										>Environment</span
+									>
+									<span class="ngo-badge bg-info text-white"
+										>Sustainability</span
+									>
+								</div>
+								<div class="mt-3">
+									<h6 class="mb-2">Impact Score: 94%</h6>
+									<div
+										class="progress mb-2"
+										style="height: 8px"
+									>
+										<div
+											class="progress-bar bg-success"
+											style="width: 94%"
+										></div>
+									</div>
+									<small class="text-success"
+										>Verified Organization</small
+									>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<h4 class="mb-3">About Green Earth Initiative</h4>
+								<p>
+									Green Earth Initiative is a leading environmental
+									conservation organization focused on restoring
+									India's green cover and promoting sustainable farming
+									practices. Founded in 2008, we've been working with
+									local communities to protect natural resources and
+									build climate resilience.
+								</p>
+
+								<h5 class="mt-4 mb-3">Key Focus Areas</h5>
+								<ul>
+									<li>Reforestation and tree plantation drives</li>
+									<li>
+										Watershed management and rainwater harvesting
+									</li>
+									<li>Sustainable agriculture training</li>
+									<li>Climate change adaptation for farmers</li>
+									<li>Environmental education in schools</li>
+								</ul>
+
+								<h5 class="mt-4 mb-3">Achievements</h5>
+								<ul>
+									<li>Planted over 3 million trees across 6 states</li>
+									<li>
+										Restored 120+ water bodies in drought-prone
+										regions
+									</li>
+									<li>
+										Trained 25,000+ farmers in sustainable farming
+										techniques
+									</li>
+									<li>
+										Established 50+ seed banks for indigenous crop
+										varieties
+									</li>
+								</ul>
+
+								<h5 class="mt-4 mb-3">Current Projects</h5>
+								<div class="row g-3">
+									<div class="col-md-6">
+										<div class="card h-100 shadow-sm">
+											<div class="card-body">
+												<h6>Million Tree Mission</h6>
+												<p class="small text-muted">
+													Planting one million native tree species
+													in degraded forest lands of Western
+													Ghats.
+												</p>
+												<div
+													class="progress mt-2"
+													style="height: 5px"
+												>
+													<div
+														class="progress-bar bg-success"
+														style="width: 72%"
+													></div>
+												</div>
+												<small class="text-muted"
+													>72% Complete</small
+												>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="card h-100 shadow-sm">
+											<div class="card-body">
+												<h6>Farmer Climate Resilience</h6>
+												<p class="small text-muted">
+													Helping 5,000 small farmers adapt to
+													changing climate conditions with
+													sustainable methods.
+												</p>
+												<div
+													class="progress mt-2"
+													style="height: 5px"
+												>
+													<div
+														class="progress-bar bg-info"
+														style="width: 58%"
+													></div>
+												</div>
+												<small class="text-muted"
+													>58% Complete</small
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-secondary"
+							data-bs-dismiss="modal"
+						>
+							Close
+						</button>
+						<button
+							type="button"
+							class="btn btn-success"
+						>
+							Support This NGO
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Shakti Foundation Modal -->
+		<div
+			class="modal fade"
+			id="shaktiFoundationModal"
+			tabindex="-1"
+			aria-labelledby="shaktiFoundationModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5
+							class="modal-title"
+							id="shaktiFoundationModalLabel"
+						>
+							Shakti Foundation
+						</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-4">
+								<img
+									src="../images/ref (3).jpg"
+									class="w-100 rounded"
+									alt="Shakti Foundation"
+								/>
+								<div class="mt-3">
+									<span class="ngo-badge bg-danger text-white"
+										>Women Empowerment</span
+									>
+									<span class="ngo-badge bg-warning text-dark"
+										>Skill Development</span
+									>
+								</div>
+								<div class="mt-3">
+									<h6 class="mb-2">Impact Score: 90%</h6>
+									<div
+										class="progress mb-2"
+										style="height: 8px"
+									>
+										<div
+											class="progress-bar bg-success"
+											style="width: 90%"
+										></div>
+									</div>
+									<small class="text-success"
+										>Verified Organization</small
+									>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<h4 class="mb-3">About Shakti Foundation</h4>
+								<p>
+									Shakti Foundation has been at the forefront of
+									women's empowerment in India since 2010. We focus on
+									economic independence, skill development, and
+									entrepreneurship opportunities for women in
+									underserved communities, with a special focus on
+									rural and semi-urban areas.
+								</p>
+
+								<h5 class="mt-4 mb-3">Key Focus Areas</h5>
+								<ul>
+									<li>Vocational training and skill development</li>
+									<li>Microfinance and self-help groups</li>
+									<li>Women entrepreneurship development</li>
+									<li>Digital literacy for women</li>
+									<li>Gender sensitization programs</li>
+								</ul>
+
+								<h5 class="mt-4 mb-3">Achievements</h5>
+								<ul>
+									<li>
+										Trained 30,000+ women in various vocational skills
+									</li>
+									<li>
+										Established 2,500+ self-help groups across 8
+										states
+									</li>
+									<li>
+										Supported 5,000+ women entrepreneurs with
+										microloans
+									</li>
+									<li>
+										Achieved 85% business sustainability rate among
+										supported ventures
+									</li>
+								</ul>
+
+								<h5 class="mt-4 mb-3">Current Projects</h5>
+								<div class="row g-3">
+									<div class="col-md-6">
+										<div class="card h-100 shadow-sm">
+											<div class="card-body">
+												<h6>Digital Sakhi Program</h6>
+												<p class="small text-muted">
+													Training 10,000 women as digital literacy
+													ambassadors in their communities.
+												</p>
+												<div
+													class="progress mt-2"
+													style="height: 5px"
+												>
+													<div
+														class="progress-bar bg-danger"
+														style="width: 45%"
+													></div>
+												</div>
+												<small class="text-muted"
+													>45% Complete</small
+												>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="card h-100 shadow-sm">
+											<div class="card-body">
+												<h6>Rural Enterprise Hub</h6>
+												<p class="small text-muted">
+													Creating 50 enterprise hubs to support
+													women-owned businesses with resources and
+													mentoring.
+												</p>
+												<div
+													class="progress mt-2"
+													style="height: 5px"
+												>
+													<div
+														class="progress-bar bg-warning"
+														style="width: 68%"
+													></div>
+												</div>
+												<small class="text-muted"
+													>68% Complete</small
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-secondary"
+							data-bs-dismiss="modal"
+						>
+							Close
+						</button>
+						<button
+							type="button"
+							class="btn btn-success"
+						>
+							Support This NGO
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Vidya Foundation Modal -->
+		<div
+			class="modal fade"
+			id="vidyaFoundationModal"
+			tabindex="-1"
+			aria-labelledby="vidyaFoundationModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5
+							class="modal-title"
+							id="vidyaFoundationModalLabel"
+						>
+							Vidya Foundation
+						</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-4">
+								<img
+									src="../images/ref (4).jpg"
+									class="w-100 rounded"
+									alt="Vidya Foundation"
+								/>
+								<div class="mt-3">
+									<span class="ngo-badge bg-primary text-white"
+										>Education</span
+									>
+								</div>
+								<div class="mt-3">
+									<h6 class="mb-2">Impact Score: 85%</h6>
+									<div
+										class="progress mb-2"
+										style="height: 8px"
+									>
+										<div
+											class="progress-bar bg-success"
+											style="width: 85%"
+										></div>
+									</div>
+									<small class="text-success"
+										>Verified Organization</small
+									>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<h4 class="mb-3">About Vidya Foundation</h4>
+								<p>
+									Vidya Foundation is transforming education through
+									digital learning centers across India. We focus on
+									bridging the digital divide and ensuring quality
+									education reaches the most underserved communities.
+								</p>
+
+								<h5 class="mt-4 mb-3">Key Focus Areas</h5>
+								<ul>
+									<li>Digital learning centers in rural areas</li>
+									<li>STEM education for underprivileged children</li>
+									<li>Teacher capacity building programs</li>
+									<li>Education technology development</li>
+								</ul>
+
+								<h5 class="mt-4 mb-3">Achievements</h5>
+								<ul>
+									<li>Established 250+ digital learning centers</li>
+									<li>
+										Improved learning outcomes for 50,000+ students
+									</li>
+									<li>
+										Developed specialized learning content in 12
+										Indian languages
+									</li>
+								</ul>
+
+								<h5 class="mt-4 mb-3">Current Projects</h5>
+								<div class="card shadow-sm">
+									<div class="card-body">
+										<h6>Digital Learning for All</h6>
+										<p class="small text-muted">
+											Expanding digital learning access to 100 new
+											remote villages.
+										</p>
+										<div
+											class="progress mt-2"
+											style="height: 5px"
+										>
+											<div
+												class="progress-bar bg-primary"
+												style="width: 60%"
+											></div>
+										</div>
+										<small class="text-muted">60% Complete</small>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-secondary"
+							data-bs-dismiss="modal"
+						>
+							Close
+						</button>
+						<button
+							type="button"
+							class="btn btn-success"
+						>
+							Support This NGO
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<script>
-			document.addEventListener('DOMContentLoaded', function() {
+			document.addEventListener("DOMContentLoaded", function () {
 				// Initialize AOS animations
 				AOS.init({
 					duration: 800,
-					easing: 'ease-in-out',
-					once: true
+					easing: "ease-in-out",
+					once: true,
 				});
+
+				// Make all category cards clickable to show profiles
+				document
+					.querySelectorAll(".category-section .ngo-card")
+					.forEach((card) => {
+						card.style.cursor = "pointer";
+						card.addEventListener("click", function () {
+							const ngoName =
+								this.querySelector("h5").textContent.trim();
+
+							let modalId = "";
+							if (ngoName === "Vidya Foundation") {
+								modalId = "vidyaFoundationModal";
+							} else if (ngoName === "Akshar Learning Society") {
+								modalId = "aksharFoundationModal";
+							} else if (ngoName === "Rural Health Mission") {
+								modalId = "ruralHealthModal";
+							} else if (ngoName === "Swasthya Foundation") {
+								modalId = "swasthyaFoundationModal";
+							} else if (ngoName === "EcoVision India") {
+								modalId = "ecoVisionModal";
+							} else if (ngoName === "Clean Waters Initiative") {
+								modalId = "cleanWatersModal";
+							} else if (ngoName === "Naari Shakti") {
+								modalId = "naariShaktiModal";
+							} else if (ngoName === "Udyogini") {
+								modalId = "udyoginiModal";
+							}
+
+							if (modalId && document.getElementById(modalId)) {
+								const modal = new bootstrap.Modal(
+									document.getElementById(modalId),
+								);
+								modal.show();
+							}
+						});
+					});
 			});
 		</script>
 	</body>
